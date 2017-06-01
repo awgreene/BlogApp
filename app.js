@@ -48,9 +48,18 @@ app.post("/blogs", function(req, res){
       } else {
           res.redirect("blogs");
       }
-   })
-   
-   // redirect
+   });
+});
+
+// SHOW ROUTE
+app.get("/blogs/:id", function(req, res){
+    Blog.findById(req.params.id, function(err, foundBlog){
+        if(err) {
+            res.redirect("blogs");
+        } else {
+            res.render("show", {blog:foundBlog});
+        }
+    });
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

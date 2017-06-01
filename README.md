@@ -14,3 +14,9 @@
 * Add NEW template
 * Add CREATE route
 * Add CREATE TEMPLATE
+
+#SHOWtime
+* Add a show route
+* Add a show template
+* Add links to the show page
+* Style show template
