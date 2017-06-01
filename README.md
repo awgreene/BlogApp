@@ -20,3 +20,10 @@
 * Add a show template
 * Add links to the show page
 * Style show template
+
+#Edit/Update
+* Add edit route
+* Add edit form
+* Add update form
+* Add method override
+
